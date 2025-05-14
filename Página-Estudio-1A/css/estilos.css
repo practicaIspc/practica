@@ -1,10 +1,56 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 3rem; 
+  background-color: #dfeaec; 
+}
+
+nav > div { 
+  display: flex;
+  align-items: center; 
+}
+
+nav > div a { 
+  text-decoration: none; 
+}
+
+.logo-1A-Dev {
+  height: 3.5rem; 
+  margin-right: 1rem; 
+}
+
+.texto-logo-1A-Dev {
+  font-size: 1.8rem; 
+  color: #000000;
+  font-weight: 600;
+}
+
+.titulo-tsdwam {
+  font-size: 1.3rem; 
+  color: #000000; 
+  margin: 0; 
+  white-space: nowrap;
+}
+
+nav > img.logo-ispc { 
+  height: 4rem; 
+}
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
