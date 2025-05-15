@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -96,3 +95,43 @@ nav > img.logo-ispc {
   color: #007bff; 
 }
 
+
+/* Sección Integrantes del Grupo */
+
+.equipo {
+  text-align: center; /* Opcional: Centra el título y el subtítulo */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  background-color: #eef2f3;
+  padding: 1rem;
+
+}
+
+.integrantes-grupo {
+  display: flex; /* Convierte el div en un contenedor flexible */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay suficiente espacio */
+  justify-content: center; /* Centra los integrantes horizontalmente */
+  margin-top: 1rem;
+}
+
+.integrantes-grupo p {
+  margin: 0.5rem 1rem; /* Añade un pequeño margen alrededor de cada nombre */
+  font-size: 1.5rem; /* Tamaño de fuente (puedes ajustarlo) */
+}
+
+
+/* Footer */
+
+.pie-de-pagina {
+  background-color: white; /* Establece el fondo blanco */
+  padding: 1rem; /* Añade un espaciado interno alrededor del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.pie-de-pagina p {
+  margin: 0; /* Elimina cualquier margen predeterminado del párrafo */
+  font-size: 1.1rem; /* Ajusta el tamaño de la fuente si lo deseas */
+  color: #333; /* Establece el color del texto (opcional) */
+  margin-top: 1rem;
+}
