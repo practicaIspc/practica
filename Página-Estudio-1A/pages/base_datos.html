@@ -4,213 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base de Datos</title>
-    <link rel="stylesheet" href="/Página-Estudio-1A/css/estilos.css">
+    <link rel="stylesheet" href="/practica/estilos.css">
 </head>
 <body>
-    <h1>Base de Datos</h1> <a href="index.html">Volver Incicio</a>
+    <h1>Base de Datos</h1>
+    <a href="../index.html">Volver Incicio</a>
     <p>horario Sicronico: Martes 15hs ó 18hs</p>
     <p>Ecidencias proxima: Viernes 16-Mayo</p>
     <p class="accordion">temas a estudiar:</p>
     <ul class="panel">
-        <li>El Modelo Entidad Relación. Componentes del modelo. Entidades, relaciones, atributos. Diagrama Entidad-Relación (DER). Casos prácticos de proyectos específicos.</li>
-        <li>El Modelo Relacional. Historia del modelo relacional. Estructura de las bases de datos relacionales. Relación o tabla. Tupla. Dominio. Grado. Cardinalidad. Sinónimos. Definición formal de relación. Propiedades de las tablas (o relaciones). Tipos de tablas. Claves. Nulos. Restricciones.</li>
+        <li>
+            El Modelo Entidad Relación. Componentes del modelo. Entidades, relaciones, atributos. Diagrama Entidad-Relación (DER). Casos prácticos de proyectos específicos.
+        </li>
+        <li>
+            El Modelo Relacional. Historia del modelo relacional. Estructura de las bases de datos relacionales. Relación o tabla. Tupla. Dominio. Grado. Cardinalidad. Sinónimos. Definición formal de relación. Propiedades de las tablas (o relaciones). Tipos de tablas. Claves. Nulos. Restricciones.
+        </li>
         <li>
             Traspaso de modelo Entidad/Relación de Chen al modelo relacional. Transformación de las entidades fuertes. Transformación de relaciones. Representación de esquemas de bases de datos relacionales. Grafos relacionales. Esquemas relacionales derivados del modelo entidad/relación. Transformación de la modelización del plan de negocios anteriormente realizado en Modelo Entidad/Relación en Modelo Relacional.
         </li>
        
     </ul>
 
-    <!-- NUEVO -->
-<p class="accordion">Concepto de Base de Datos y Diseño</p>
-<p class="panel">Una base de datos es un conjunto organizado de información que permite almacenar, gestionar y recuperar datos de manera eficiente. Su diseño implica definir la estructura, relaciones y restricciones para garantizar la integridad y optimización del almacenamiento</p>
-<p><b>Tipos de Datos</b></p>
-<ul>
-    <li>
-Numéricos: Enteros, decimales.
-    </li>
-    <li>
-        Texto: Cadenas de caracteres.
-    </li>
-    <li>
-        Fecha y hora: Para almacenar información temporal.
-    </li>
-    <li>
-        Booleanos: Verdadero/Falso.
-    </li>
-    <li>
-        Objetos y multimedia: Imágenes, videos, documentos
-    </li>
-</ul>
-
-<p class="accordion"><b>Modelo Entidad Relación (ER)</b></p>
-<p class="panel">El Modelo Entidad Relación (ER) es una técnica de modelado de datos que representa la estructura lógica de una base de datos. Se basa en entidades, atributos y relaciones entre ellas. Las entidades son objetos o conceptos del mundo real, los atributos son las propiedades de las entidades y las relaciones describen cómo interactúan las entidades entre sí.</p>
-
-<p class="accordion"><b>Modelo Relacional</b></p>
-<p class="panel">El Modelo Relacional es un enfoque para organizar datos en tablas (o relaciones) que se relacionan entre sí. Cada tabla tiene filas (tuplas) y columnas (atributos). Las claves primarias identifican de manera única cada fila, mientras que las claves foráneas establecen relaciones entre tablas. Este modelo permite realizar consultas complejas y garantiza la integridad de los datos.</p>
-
-<p class="accordion"><b>Transformación de Modelo ER a Relacional</b></p>
-<p class="panel">La transformación de un modelo ER a un modelo relacional implica convertir entidades y relaciones en tablas. Las entidades se convierten en tablas, los atributos se convierten en columnas y las relaciones se representan mediante claves foráneas. Este proceso asegura que la estructura de la base de datos sea coherente y eficiente para su uso.</p>
-<p class="accordion"><b>Ejemplo de Transformación</b></p>
-<p class="panel">Supongamos que tenemos un modelo ER con dos entidades: "Cliente" y "Pedido". La entidad "Cliente" tiene atributos como "ID_Cliente", "Nombre" y "Email". La entidad "Pedido" tiene atributos como "ID_Pedido", "Fecha" y "ID_Cliente" (clave foránea que referencia a la entidad Cliente). Al transformar a un modelo relacional, tendríamos dos tablas: "Clientes" y "Pedidos", donde la tabla "Pedidos" tendría una columna "ID_Cliente" que establece la relación entre ambas tablas.</p>
-
-<p class="accordion"><b>Ejemplo de Diagrama Entidad Relación (DER)</b></p>
-<p class="panel">Un Diagrama Entidad Relación (DER) es una representación gráfica del modelo ER. En este diagrama, las entidades se representan como rectángulos, los atributos como óvalos y las relaciones como rombos. Por ejemplo, en un DER para el modelo de "Cliente" y "Pedido", tendríamos un rectángulo para "Cliente" con sus atributos conectados a él y otro rectángulo para "Pedido" con su relación hacia "Cliente".</p>
-
-<p class="accordion"><b>Ejemplo de Diagrama Relacional</b></p>
-<p class="panel">Un diagrama relacional muestra la estructura de las tablas en un modelo relacional. En este diagrama, cada tabla se representa como un rectángulo con sus columnas enumeradas dentro. Por ejemplo, tendríamos un rectángulo para la tabla "Clientes" con las columnas "ID_Cliente", "Nombre" y "Email", y otro rectángulo para la tabla "Pedidos" con las columnas "ID_Pedido", "Fecha" y "ID_Cliente". Las relaciones entre tablas se indican mediante líneas que conectan las claves foráneas con las claves primarias correspondientes.</p>
-<p class="accordion"><b>Ejemplo de Esquema Relacional</b></p>
-<p class="panel">Un esquema relacional es una representación formal de la estructura de una base de datos relacional. Incluye la definición de tablas, columnas, tipos de datos y restricciones. Por ejemplo, el esquema relacional para las tablas "Clientes" y "Pedidos" podría definirse como:</p>
-<pre>
-CREATE TABLE Clientes (
-    ID_Cliente INT PRIMARY KEY,
-    Nombre VARCHAR(50),
-    Email VARCHAR(100)
-);
-CREATE TABLE Pedidos (
-    ID_Pedido INT PRIMARY KEY,
-    Fecha DATE,
-    ID_Cliente INT,
-    FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente)
-);
-</pre>
-<p>Este esquema define las tablas, sus columnas y las relaciones entre ellas, asegurando la integridad referencial.</p>
-
-<p class="accordion"><b>Ejemplo de Consulta SQL</b></p>
-<p class="panel">Una consulta SQL es una instrucción utilizada para interactuar con una base de datos relacional. Por ejemplo, para obtener todos los pedidos realizados por un cliente específico, podríamos usar la siguiente consulta:</p>
-
-<pre>
-SELECT * FROM Pedidos
-WHERE ID_Cliente = 1;
-</pre>
-
-<p>Esta consulta selecciona todos los registros de la tabla "Pedidos" donde el "ID_Cliente" es igual a 1, devolviendo así todos los pedidos realizados por ese cliente.</p>
-
-<p class="accordion"><b>Ejemplo de Normalización</b></p>
-
-<p class="panel">La normalización es el proceso de organizar los datos en una base de datos para reducir la redundancia y mejorar la integridad. Por ejemplo, si tenemos una tabla "Clientes" con información duplicada, podríamos dividirla en dos tablas: "Clientes" y "Direcciones", donde "Clientes" contenga información básica y "Direcciones" contenga detalles de dirección. Esto ayuda a evitar la duplicación de datos y mejora la eficiencia del almacenamiento.</p>
-
-<p class="accordion"><b>Ejemplo de Integridad Referencial</b></p>
-<p class="panel">La integridad referencial es una propiedad que garantiza que las relaciones entre tablas se mantengan consistentes. Por ejemplo, si tenemos una tabla "Pedidos" con una clave foránea "ID_Cliente" que referencia a la tabla "Clientes", no se permitirá insertar un pedido con un "ID_Cliente" que no exista en la tabla "Clientes". Esto asegura que todas las relaciones sean válidas y evita datos huérfanos.</p>
-<p class="accordion"><b>Ejemplo de Restricciones</b></p>
-<p class="panel">Las restricciones son reglas que se aplican a los datos en una base de datos para garantizar su validez. Por ejemplo, podríamos establecer una restricción de unicidad en la columna "Email" de la tabla "Clientes" para asegurarnos de que no haya dos clientes con el mismo correo electrónico. Esto ayuda a mantener la integridad de los datos y evita duplicaciones no deseadas.</p>
-<p class="accordion"><b>Ejemplo de Índices</b></p>
-<p class="panel">Los índices son estructuras que mejoran el rendimiento de las consultas en una base de datos. Por ejemplo, si tenemos una tabla "Clientes" y realizamos consultas frecuentes basadas en la columna "Nombre", podríamos crear un índice en esa columna para acelerar las búsquedas. Esto permite que la base de datos encuentre rápidamente los registros relevantes sin tener que escanear toda la tabla.</p>
-
-<p class="accordion">Noción de Registro</p>
-<p class="panel">Un registro es una fila dentro de una tabla de base de datos que contiene información sobre una entidad específica. Cada registro está compuesto por varios campos, que representan atributos de la entidad.</p>
-
-<p class="accordion">Concepto de Archivo</p>
-<p class="panel"> 
-    Un archivo en bases de datos es un conjunto de registros almacenados en un sistema de archivos. Puede ser estructurado (como una tabla en una base de datos relacional) o no estructurado (como documentos JSON o XML).
-</p>
-
-<p class="bold">
-    Operaciones Relacionadas con el Uso de Ficheros en Bases de Datos
-</p>
-
-<ul>
-    <li><b>Inserción:</b> Agregar nuevos datos.</li>
-    <li><b>Actualización: </b>Modificar registros existentes.</li>
-    <li><b>Eliminación:</b> Borrar datos innecesarios.</li>
-    <li><b>Consulta: </b>Recuperar información mediante SQL.</li>
-</ul>
-
-
-<p class="accordion">Cardinalidad</p>
-<p class="panel">La cardinalidad en bases de datos define la cantidad de relaciones posibles entre entidades. Se clasifica en:</p>
-
-<ul>
-    <li><b>Uno a Uno (1:1):</b> Cada registro de una tabla se relaciona con un solo registro de otra tabla.</li>
-    <li><b>Uno a Muchos (1:N):</b> Un registro de una tabla puede relacionarse con múltiples registros de otra tabla.</li>
-    <li><b>Muchos a Muchos (M:N):</b> Varios registros de una tabla pueden relacionarse con varios registros de otra tabla.</li>
-</ul>
-
-<p class="accordion">Definición formal de relación</p>
-<p class="panel">
-   Una relación en bases de datos es la asociación entre dos o más entidades. Se representa mediante una tabla que contiene claves foráneas para establecer vínculos entre registros.
-</p>
-
-<p class="accordion">Propiedades de las tablas (o relaciones)</p>
-<p class="panel">
-    Las tablas en bases de datos tienen propiedades clave:
-<ul>
-    <li>Estructura definida: Columnas con tipos de datos específicos.</li>
-    <li>Integridad referencial: Relaciones entre tablas bien establecidas.</li>
-    <li>Consistencia: Datos organizados sin redundancia.</li>
-</ul>
-
-</p>
-
-<p class="accordion">Tipos de tablas</p>
-<p class="panel">
-    Las bases de datos pueden contener distintos tipos de tablas:
-<ul>
-    <li>Tablas de datos: Almacenan información principal.</li>
-    <li>Tablas de relación: Conectan entidades en relaciones M:N.</li>
-    <li>Tablas temporales: Usadas para almacenamiento transitorio.</li>
-</ul>
-
-
-<p class="accordion">Claves</p>
-<p class="panel">
-    Las claves identifican registros de manera única:
-<ul>
-    <li>Clave primaria: Identificador único de cada fila.</li>
-    <li>Clave foránea: Referencia a una clave primaria de otra tabla.</li>
-    <li>Clave compuesta: Formada por múltiples columnas.</li>
-</ul>
-</p>
-
-
-<p class="accordion">Nulos</p>
-<p class="panel">
-    Un valor nulo indica ausencia de datos en una columna. Puede ser útil para representar información desconocida o no aplicable, pero debe manejarse con cuidado para evitar inconsistencias.
-</p>
-
-
-<p class="accordion">Restricciones</p>
-<p class="panel">
-   Las restricciones en bases de datos son reglas que garantizan la integridad y validez de los datos almacenados. Se utilizan para evitar errores, duplicaciones o inconsistencias en la información. 
-</p>
-   
-<p class="accordion">Existen varias restricciones comunes en bases de datos:</p>
-
-<ul class="panel">
-    <li>NOT NULL: Evita valores vacíos.</li>
-    <li>UNIQUE: Asegura que los valores sean únicos.</li>
-    <li>CHECK: Valida que los datos cumplan condiciones específicas.</li>
-    <li>DEFAULT: Asigna un valor predeterminado si no se proporciona uno.</li>
-    <li>FOREIGN KEY: Mantiene la integridad referencial entre tablas.</li>
-    <li>PRIMARY KEY: Define la clave primaria de una tabla.</li>
-    <li>INDEX: Mejora el rendimiento de consultas.</li>
-    <li>TRIGGER: Ejecuta acciones automáticas ante eventos específicos.</li>
-    <li>VIEW: Crea una vista virtual de los datos.</li>
-    <li>STORED PROCEDURE: Almacena procedimientos
-        para realizar operaciones complejas.</li>
-    <li>TRANSACTION: Agrupa operaciones para garantizar la atomicidad.</li>
-    <li>ROLLBACK: Revierte cambios en caso de error.</li>
-    <li>COMMIT: Confirma cambios realizados en una transacción.</li>
-    <li>GRANT: Otorga permisos a usuarios.</li>
-        
-    <li>REVOKE: Revoca permisos otorgados.</li>
-    <li>ALTER: Modifica la estructura de una tabla.</li>
-    <li>DROP: Elimina una tabla o base de datos.</li>
-    <li>CREATE: Crea una nueva tabla o base de datos.</li>
-</ul>
 
 
 
-
-
-<!-- NUEVO -->
-
-
-
-
-
-
-
-
-    <script src="/Página-Estudio-1A/js/main.js"></script>
+    <script src="/practica/main.js"></script>
 </body>
 </html>
