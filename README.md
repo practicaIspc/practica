@@ -104,5 +104,5 @@ Somos el grupo de trabajo **1A-Developers**, estudiantes del primer año de la T
 * 👨🏽‍💻**Eric Heredia** - [Developer] - https://github.com/Heredia-Eric
 * 👨🏽‍💻**Maximino Moyano** - [Developer] - https://github.com/MaxgelMax
 * 👩🏽‍💻**Rocio Briz** - [Developer] - https://github.com//Anabelro94
-
+* 👨🏽‍💻**Kiara Fernandez** - [Developer] https://github.com/kiarafernandez756
 <br/>
